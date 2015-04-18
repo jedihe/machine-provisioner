@@ -1,0 +1,7 @@
+[color]
+	ui = auto
+[user]
+	name = John Herreño
+	email = jedihe@gmail.com
+[core]
+	editor = vim
