@@ -21,6 +21,7 @@ node default {
   include indicators
   include multimedia
   include network
+  include nvidia
   include oracle_java
   include ssr
   include sys
@@ -29,6 +30,7 @@ node default {
   include unity_settings
   include vim
   include virtualization
+  include xsettings
   include zsh
 }
 
