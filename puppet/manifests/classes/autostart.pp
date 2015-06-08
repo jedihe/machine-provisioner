@@ -20,6 +20,10 @@ class autostart {
     require => File['startup.sh'],
   }
 
+  package { 'python-tk':
+    ensure => 'installed',
+  }
+
   exec { 'clone workday repo':
     command => 'git clone http://github.com/jedihe/workday.git workday',
     cwd => "$::userdir/src",
@@ -27,6 +31,7 @@ class autostart {
     user =>  $::username,
     group => $::username,
     path => ['/bin', '/usr/bin'],
+    require => Package['python-tk'],
   }
 
   file { "autorun workday.py":
