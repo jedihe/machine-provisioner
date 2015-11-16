@@ -1,4 +1,12 @@
 class autostart {
+  file { "autostart dir":
+    ensure => directory,
+    path => "$::userdir/.config/autostart",
+    mode => 754,
+    owner => $::username,
+    group => $::username,
+  }
+
   file { "startup.sh":
     ensure => present,
     source => "puppet:///modules/miscfiles/startup.sh",
@@ -17,7 +25,7 @@ class autostart {
     owner => $::username,
     group => $::username,
     replace => true,
-    require => File['startup.sh'],
+    require => File['startup.sh', 'autostart dir'],
   }
 
   package { 'python-tk':
@@ -42,6 +50,6 @@ class autostart {
     owner => $::username,
     group => $::username,
     replace => true,
-    require => Exec['clone workday repo'],
+    require => [Exec['clone workday repo'], File['autostart dir']],
   }
 }
