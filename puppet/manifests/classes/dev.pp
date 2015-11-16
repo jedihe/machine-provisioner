@@ -14,5 +14,6 @@ class dev {
     unless => 'ls /usr/bin/grunt',
     path => ['/bin', '/usr/bin'],
     logoutput => true,
+    require => Ppa_package['node js'],
   }
 }
