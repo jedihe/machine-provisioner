@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install docker
-#curl -sSL https://get.docker.io/ubuntu/ | sudo sh
+#curl -sSL https://get.docker.com | sudo sh
 
 # Configure user
 sudo groupadd docker
