@@ -5,3 +5,5 @@
 	email = jedihe@gmail.com
 [core]
 	editor = vim
+[merge]
+	conflictstyle = diff3
