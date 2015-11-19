@@ -17,6 +17,7 @@ node default {
   include desktop_tools
   include dev
   include git
+  include hibernation
   include indicators
   include multimedia
   include network
