@@ -21,11 +21,6 @@ class multimedia {
     package => 'indicator-sound-switcher',
   }
 
-  ppa_package { "ffmpeg":
-    ppa => 'ppa:mc3man/trusty-media',
-    package => 'ffmpeg',
-  }
-
   ppa_package { "pulseaudio-equalizer":
     ppa => 'ppa:nilarimogard/webupd8',
     package => 'pulseaudio-equalizer',
