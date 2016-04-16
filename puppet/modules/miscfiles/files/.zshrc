@@ -80,7 +80,10 @@ alias glog='__glog'
 alias gloga='glog --all'
 
 function __workday_compile() {
-  MP4Box $(for file in workday-*; do echo -n " -cat "$file; done) $@
+  #MP4Box $(for file in workday-*; do echo -n " -cat "$file; done) $@
+  for file in workday*; do echo "file $file" >> file-list.txt; done
+  ffmpeg -f concat -i file-list.txt -codec copy $@
+  rm file-list.txt
 }
 alias workday_compile='__workday_compile'
 
