@@ -9,4 +9,9 @@ class desktop_tools {
   ]
 
   package { $packages: ensure => installed }
+
+  ppa_package { "double commander":
+    ppa => 'ppa:alexx2000/doublecmd',
+    package => 'doublecmd-gtk',
+  }
 }
