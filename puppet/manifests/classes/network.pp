@@ -6,14 +6,4 @@ class network {
   ]
 
   package { $network_packages: ensure => installed }
-
-  ppa_package { "btsync":
-    ppa => 'ppa:tuxpoldo/btsync',
-    package => 'btsync-gui',
-  }
-
-  ppa_package { "jdownloader":
-    ppa => 'ppa:jd-team/jdownloader',
-    package => 'jdownloader',
-  }
 }

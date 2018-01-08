@@ -8,12 +8,6 @@ class indicators {
     ensure => present,
   }
 
-  exec { "remove messages indicator":
-    command => "apt-get remove --purge -y indicator-messages",
-    onlyif => 'dpkg -l | grep indicator-messages',
-    path => ['/bin', '/usr/bin', '/usr/local/sbin', '/usr/sbin', '/sbin'],
-  }
-
   # Caffeine 2.7 has no GUI :(
   #ppa_package { "caffeine indicator":
     #ppa => 'ppa:caffeine-developers/ppa',
