@@ -5,7 +5,7 @@ class desktop_tools {
     'nautilus-actions',
     'compiz-plugins-extra',
     'filezilla',
-    'xchat',
+    'hexchat',
   ]
 
   package { $packages: ensure => installed }
