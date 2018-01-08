@@ -1,6 +1,6 @@
 class nvidia {
-  ppa_package { "nvidia 352":
+  ppa_package { "nvidia 375":
     ppa => 'ppa:graphics-drivers/ppa',
-    package => 'nvidia-352',
+    package => 'nvidia-375',
   }
 }
