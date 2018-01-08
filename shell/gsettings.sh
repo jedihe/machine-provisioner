@@ -8,14 +8,14 @@ gsettings set org.gnome.desktop.wm.preferences mouse-button-modifier "<Super>"
 gsettings set com.canonical.indicator.session show-real-name-on-panel "true"
 
 # Multiload indicator
-gsettings set de.mh21.indicator.multiload.general autostart "true"
-gsettings set de.mh21.indicator.multiload.general graphs "['load','cpu','mem','disk','swap','net']"
-gsettings set de.mh21.indicator.multiload.general width "30"
-gsettings set de.mh21.indicator.multiload.graphs.cpu enabled "true"
-gsettings set de.mh21.indicator.multiload.graphs.disk enabled "true"
-gsettings set de.mh21.indicator.multiload.graphs.load enabled "true"
-gsettings set de.mh21.indicator.multiload.graphs.net enabled "true"
-gsettings set de.mh21.indicator.multiload.graphs.swap enabled "true"
+gsettings set de.mh21.indicator-multiload.general autostart "true"
+gsettings set de.mh21.indicator-multiload.general graphs "['load','cpu','mem','disk','swap','net']"
+gsettings set de.mh21.indicator-multiload.general width "30"
+gsettings set de.mh21.indicator-multiload.graphs.cpu enabled "true"
+gsettings set de.mh21.indicator-multiload.graphs.disk enabled "true"
+gsettings set de.mh21.indicator-multiload.graphs.load enabled "true"
+gsettings set de.mh21.indicator-multiload.graphs.net enabled "true"
+gsettings set de.mh21.indicator-multiload.graphs.swap enabled "true"
 
 # Calendar indicator
 gsettings set com.canonical.indicator.datetime show-locations "true"
