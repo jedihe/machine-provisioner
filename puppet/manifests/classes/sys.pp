@@ -5,9 +5,13 @@ class sys {
     path => "/usr/bin",
   }
 
-  ppa_package { "ubuntu tweak":
-    ppa => 'ppa:tualatrix/ppa',
-    package => 'ubuntu-tweak',
+  $tweak_tools = [
+    'unity-tweak-tool',
+    'gnome-tweak-tool',
+  ]
+
+  package { $tweak_tools:
+    ensure => 'installed',
   }
 
   ppa_package { "grub customizer":
