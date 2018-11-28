@@ -195,6 +195,9 @@ au BufNewFile,BufRead *.test set filetype=php
 :nmap <C-l> gt
 :nmap <C-h> gT
 
+" NERDTree config
+let NERDTreeNodeDelimiter = "\t"
+
 "Ctrl-P config
 :let g:ctrlp_map = '<C-P>'
 :let g:ctrlp_match_window_bottom = 0
